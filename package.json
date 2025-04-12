@@ -3,6 +3,13 @@
   "description": "tRPC adapter for uWebSockets.js server",
   "version": "11.0.4",
   "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.ts",
+      "require": "./dist/index.js"
+    }
+  },
   "type": "commonjs",
   "types": "./types/index.d.ts",
   "engines": {
